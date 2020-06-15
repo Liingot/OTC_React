@@ -1,0 +1,12 @@
+@charset "utf-8";
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { _height: 100%; min-width: 1200px; }
+body, div, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, button, select, th, td, blockquote, pre, code, hr, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { margin: 0; padding: 0; }
+body, button, input, select, textarea { font: 12px/150% Arial, Verdana, "SimSun"; }
+ol, ul { list-style: none; }
+input { outline: none; }
+em, i { font-style: normal; }
+a { outline: 0; text-decoration: none; }
+a:hover { text-decoration: none; }
+.clearfix, .layout { zoom: 1; }
+.clearfix:after, .layout:after { visibility: hidden; display: block; content: "."; font-size: 0; height: 0; clear: both; }

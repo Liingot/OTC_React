@@ -1,0 +1,136 @@
+.Dashboard-header{
+    width: 100%;
+    height: 120px;
+    background: white;
+    padding: 10px 32px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.header-info{
+    display: flex;
+    align-items: center;
+}
+.portrait{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.portrait > img{
+    width:  100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.welcome > p:nth-child(1){
+    padding: 7px 0;
+    font-size: 18px;
+    color: #262626;
+    font-weight: 500;
+}
+.welcome > p:nth-child(2){
+    padding: 7px 0;
+    color: #8d8d8d;
+}
+.time{
+    display: flex;
+    align-items: center;
+}
+
+.time-text  > p:nth-child(1){
+    font-size: 16px;
+    color: #485465;
+    padding: 7px 0;
+    box-sizing: border-box;
+}
+.time-text  > p:nth-child(2){
+    font-size: 22px;
+    font-weight: 500;
+    color: #2c82be;
+    padding: 7px 0;
+    box-sizing: border-box;
+}
+.time-icon{
+    width: 50px;
+    height: 44px;
+    background:url(../assets/images/time.png) no-repeat;
+    background-size: cover;
+    margin-left: 45px;
+    text-align: center;
+    line-height: 44px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.Col{
+    padding-right: 20px;
+    height: 400px;
+    box-sizing: border-box;
+}
+.Col-content{
+    height: 100%;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Col-right{
+    height: 400px;
+    background: white;
+}
+.Col-content-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Col-content-text > span:nth-child(1){
+    font-size: 15px;
+    color: #485465;
+}
+.Col-content-text > span:nth-child(2){
+    font-size: 15px;
+    color: #2C82BE;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Col-uls{
+    display: flex;
+    border: 1px solid #e8e8e8;
+    margin-top: 25px;
+}
+.Col-lis{
+    width: 33.3%;
+    line-height: 100px;
+}
+.Col-lis-bordr{
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+.Col-lis-num{
+    margin-left: 15px;
+    font-size: 20px;
+    color: #2c82be;
+    font-weight: 500;
+    position: relative;
+}
+.Col-lis-num::before{
+    content: "";
+    display: block;
+    width: 110%;
+    height: 2px;
+    background: #2C82BE;
+    position: absolute;
+    bottom: 33%;
+    left: 0;
+}
+.Col-lis > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num-title{
+    font-size: 14px;
+    color: #53596e;
+}
