@@ -20,6 +20,7 @@ function Sider() {
                 {
                     routerList.map((item, index) => {
                         return (
+                           
                             // onClick={() => { setActive(index) }}
                             // sidebar-li是默认样式,sidebar-li-active是选中时候的样式
                             <li className={`sidebar-li ${index === activeIndex ? 'sidebar-li-active' : null}`} key={index}>

@@ -23,8 +23,10 @@ function Content() {
                             <Redirect exact from="/" to="/Dashboard" />
                             {
                                 routerList.map((item, index) => {
-                                    return (<Route path={item.path} key={index}
-                                        component={item.component}></Route>)
+                                    return (
+                                        <Route path={item.path} key={index}
+                                            component={item.component}></Route>
+                                    )
                                 })
                             }
                         </Switch>

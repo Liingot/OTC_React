@@ -10,13 +10,11 @@ function Index() {
         <Router>
             <Switch>
                 <Route component={Login} path="/login"></Route>
-                {/* <Layout /> */}
                 <Route
                     render={() => {
                         if (!token) {
                             return <Redirect to="/Login" />;
                         } else {
-                            console.log('000');
                             return <Layout />;
                         }
                     }}

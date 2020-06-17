@@ -1,0 +1,55 @@
+.task-header{
+    height: 58px;
+    background: white;
+    line-height: 58px;
+    padding-left: 20px;
+   box-sizing: border-box;
+}
+.el-dropdown-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+  }
+.grid{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.grid > div{
+    width: 49%;
+    height: 350px;
+    background: white;
+}
+.grid-content-header{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: rgba(245, 251, 255, 1);
+    font-size: 16px;
+    line-height: 55px;
+    font-weight: 500;
+}
+.task-icon{
+    font-size: 25px;
+    color: #0083c3 !important;
+    cursor: pointer;
+}
+.grid-echarts-left{
+    height: calc(100% - 55px);
+    position: relative;
+}
+.monthly{
+    background: white;
+    height: 350px;
+}
+.setMonthly{
+    color: #2c82be;
+    cursor: pointer;
+    font-size: 15px;
+}
+.monthly-content{
+    height: calc(100% - 55px);
+    position: relative;
+}

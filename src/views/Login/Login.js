@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory ,Redirect} from "react-router-dom";
+import { useHistory, Redirect } from "react-router-dom";
 import { Input, Select, Button, message } from 'antd';
 import { UserOutlined, UnlockOutlined } from '@ant-design/icons';
 import { areaQueryByPage, login, getUsetInfo } from "../../api/login";
@@ -13,7 +13,6 @@ function Login() {
         init();
     }, []);
     let token = localStorage.getItem('token'); //后期改成redux获取
-
     if (token) {
         return <Redirect to="/Dashboard" />;
     }
@@ -37,7 +36,7 @@ function Login() {
         </section>
     </div>)
     function rect() {
-        history.push('/');
+        history.push('/Dashboard');
     }
     function handleChange(value) {
         let { loginName, certificate } = params;

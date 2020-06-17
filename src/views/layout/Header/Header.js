@@ -3,13 +3,26 @@ import { useHistory } from "react-router-dom"
 import { Menu, Dropdown, Breadcrumb } from 'antd';
 import menuList from "../../../router/menuConfig";
 const menu = (
-    <Menu>
-        <Menu.Item key="0">
-            <span>退出</span>
+    <Menu onClick={onClick}>
+        <Menu.Item key="signOut">
+            退出
         </Menu.Item>
-
     </Menu>
 );
+let userInfo = localStorage.getItem('userInfo');
+let companyName = '';
+if (userInfo) companyName = JSON.parse(userInfo).companyName;
+function onClick(value) {
+    let { key } = value;
+    switch (key) {
+        case 'signOut':
+            localStorage.clear();
+            break;
+
+        default:
+            break;
+    }
+}
 function getPath(menuList, pathname) {
     let temppath = [];
     try {
@@ -37,10 +50,6 @@ function getPath(menuList, pathname) {
         return temppath;
     }
 };
-
-function hanlde(e) {
-    console.log(e);
-}
 function Header() {
     // 拿到面包屑渲染的数组
     let history = useHistory();
@@ -58,11 +67,15 @@ function Header() {
                         <Breadcrumb.Item key={item.path} onClick={() => { history.push(item.path) }}>{item.title}</Breadcrumb.Item>
                     )}
             </Breadcrumb>
-            <Dropdown overlay={menu} trigger={['click']}>
-                <div className='user-logo' onClick={hanlde}>
-                    <img src="https://s1.ax1x.com/2020/04/28/J5hUaT.jpg" alt="" />
-                </div>
-            </Dropdown>
+            <div className='right-menu'>
+                <span>{companyName}
+                </span>
+                <Dropdown overlay={menu} trigger={['click']}>
+                    <div className='user-logo' >
+                        <img src="https://s1.ax1x.com/2020/04/28/J5hUaT.jpg" alt="" />
+                    </div>
+                </Dropdown>
+            </div>
         </header>
     </div>)
 

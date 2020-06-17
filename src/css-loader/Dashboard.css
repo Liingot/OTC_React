@@ -183,3 +183,19 @@
     color: white;
     margin-right: 5px;
 }
+.Col-right-h3{
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.Col-right-h3 > span{
+    color: #485465;
+    font-size: 15px;
+}
+.col-right-echarts{
+    height: calc(100% - 50px);
+    position: relative;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from 'antd';
+import { FormOutlined } from '@ant-design/icons';
 import NoData from "../../components/noData/NoData";
 import "../../css-loader/Dashboard.css"
 function Dashboard() {
@@ -73,7 +74,14 @@ function Dashboard() {
                 </Col>
                 <Col span={8} >
                     <div className="Col-right">
-                        <NoData />
+                        <h3 className="Col-right-h3">
+                            <span>年度目标</span>
+
+                            <FormOutlined />
+                        </h3>
+                       <div className="col-right-echarts">
+                       <NoData />
+                       </div>
                     </div>
                 </Col>
             </Row>
