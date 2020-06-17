@@ -1,0 +1,158 @@
+.statusA {
+    color: #50d562 !important;
+}
+
+.statusB {
+    color: #ff4b4b !important;
+}
+
+.statuC {
+    color: #ff9838 !important;
+}
+
+.collection {
+    margin-top: 20px;
+}
+
+.intent-h3 {
+    font-size: 16px;
+    color: #2B2F40;
+    font-weight: 500;
+}
+
+.myintention {
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.intent-header {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #e6e8e9;
+}
+
+.operation {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.my-content {
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.my-uls {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-lis {
+    cursor: pointer;
+    width: 32.5%;
+    margin-right: 1.25%;
+    margin-bottom: 20px;
+    border: 1px solid #e6e8e9;
+    border-radius: 5px;
+
+}
+
+.my {
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.my-uls>li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.my>p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 25px;
+}
+
+.text {
+    color: #707070;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.text-content {
+    color: #2c82be;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.type {
+    display: flex;
+    align-items: center;
+}
+
+.type-img {
+  
+    display: flex;
+    align-self: auto;
+    margin-right: 6px;
+}
+
+
+
+.look {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-icon {
+    color: #2C82BE;
+}
+
+.look>div {
+    width: 33.3%;
+    color: #53596E;
+    line-height: 25px;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.look-num {
+    color: #2C82BE;
+    margin-left: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: -15%;
+}
+
+.lis-footer {
+    display: flex;
+}
+
+.lis-footer>span {
+    display: block;
+    width: 33.3%;
+    height: 40px;
+    line-height: 40px;
+    color: #2C82BE;
+    font-size: 12px;
+    background: #F5FBFF;
+    text-align: center;
+    border-right: 1px solid #E6E8E9;
+    font-weight: bold;
+}
+
+.lis-footer>span:nth-child(3) {
+    border: none;
+}
+
+.noData {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+}

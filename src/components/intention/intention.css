@@ -1,0 +1,95 @@
+.statusA {
+    color: #50d562 !important;
+}
+
+.statusB {
+    color: #ff4b4b !important;
+}
+
+.statuC {
+    color: #ff9838 !important;
+}
+
+.intention {
+    margin: 20px 0;
+    background: white;
+}
+
+.intent-header {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #e6e8e9;
+
+}
+
+.intent-h3 {
+    font-size: 16px;
+    color: #2B2F40;
+    font-weight: 500;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2C82BE;
+}
+
+.inten-content {
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.inten-uls {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inten-lis {
+    cursor: pointer;
+    width: 32.5%;
+    margin-right: 1.25%;
+    margin-bottom: 20px;
+    border: 1px solid #e6e8e9;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.inten-uls>li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.inten-lis>p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 25px;
+
+}
+
+.text {
+    color: #707070;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.text-content {
+    color: #2c82be;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.type {
+    display: flex;
+    align-items: center;
+}
+
+.type-img {
+    margin-right: 6px;
+    display: flex;
+    align-self: auto;
+}

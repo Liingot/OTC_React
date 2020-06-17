@@ -1,0 +1,55 @@
+.bus-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 32px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #e6e8e9;
+  background: white;
+}
+.progress {
+    width: 100%;
+    background: #bcbcbc;
+    height: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  .bgGray{
+    background-color:  #bcbcbc;
+  }
+  .bgGreen{
+    background-color: #18af83;
+  }
+  .bgRed{
+    background-color: red;
+  }
+  .meter {
+    float: left;
+    display: block;
+    height: 5px;
+    background: #2c82be;
+  }
+  .meter2 {
+    float: left;
+    display: block;
+    height: 5px;
+    background: #18af83;
+  }
+  .p1 {
+    font-size: 10px;
+    color: #2c82be;
+  }
+  .pro {
+    margin: 7px 0;
+  }
+  .p2 {
+    font-size: 10px;
+    color: #2c82be;
+
+  }
+  .p2  > span:nth-of-type(2) {
+    color: #18af83;
+  }
+  .p2  >  span:nth-of-type(3) {
+    color: #cdcdcd;
+  }

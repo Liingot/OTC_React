@@ -55,10 +55,10 @@ function Header() {
     let history = useHistory();
     const pathname = history.location.pathname;
     let path = getPath(menuList, pathname);
-    const first = path && path[0];
-    if (first && first.title.trim() !== "首页") {
-        path = [{ title: "首页", path: "/Dashboard" }].concat(path);
-    }
+    // const first = path && path[0];
+    // if (first && first.title.trim() !== "交易台") {
+    //     path = [{ title: "交易台", path: "/Dashboard" }].concat(path);
+    // }
     return (<div>
         <header className='layout-header'>
             <Breadcrumb>

@@ -10,3 +10,5 @@ a { outline: 0; text-decoration: none; }
 a:hover { text-decoration: none; }
 .clearfix, .layout { zoom: 1; }
 .clearfix:after, .layout:after { visibility: hidden; display: block; content: "."; font-size: 0; height: 0; clear: both; }
+.red-color{color: rgb(228, 91, 91) !important;} .green-color{color: rgb(24, 175, 131) !important;}
+.no-color{color: #2c82be !important;}

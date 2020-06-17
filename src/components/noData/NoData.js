@@ -1,6 +1,6 @@
 import React from "react";
 import noDate from "../../assets/images/noData.png";
-import '../../css-loader/noData.css'
+import './noData.css'
 function NoData() {
     return (<div className='NoData'>
         <img src={noDate} className='no-data' alt='/' />

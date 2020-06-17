@@ -8,7 +8,7 @@
  */
 const menuList = [
   {
-    title: "首页",
+    title: "交易台",
     path: "/Dashboard",
     role: [1, 2],
   },
@@ -30,7 +30,14 @@ const menuList = [
   {
     title: "商机管理",
     path: "/BusinessDKH",
-    role: [2]
+    role: [2],
+    children: [
+      {
+        title: "demo",
+        path: "/demo",
+        role: [1, 2]
+      }
+    ]
   },
   {
     title: "双边洽谈",
@@ -47,9 +54,20 @@ const menuList = [
 
 /**
  * 
- * trck == true为发电企业角色  trck == false为大客户
+ * trck == true为发电企业角色  trck == false为大客户||售电公司
  */
-let trck = false; let data = [];
+
+let trck = null; let data = [];
+let userInfo = localStorage.getItem('userInfo');
+let companyType = userInfo ? JSON.parse(userInfo).companyType : '';
+if (companyType === '1') {  //发电企业
+  trck = true;
+}
+else if (companyType === '2') {  //售电公司
+  trck = false;
+} else {  //大客户
+  trck = false;
+}
 if (trck) data = menuList.filter(item => {
   return item.role.includes(1) === true;
 })

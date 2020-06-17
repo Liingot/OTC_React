@@ -7,7 +7,6 @@ import Header from "../Header/Header"; //头部
 
 function Content() {
     let history = useHistory().location;
-
     return (
         <div className="sidebar-right">
             <Header />
@@ -24,7 +23,7 @@ function Content() {
                             {
                                 routerList.map((item, index) => {
                                     return (
-                                        <Route path={item.path} key={index}
+                                        <Route path={item.path} key={item.path}
                                             component={item.component}></Route>
                                     )
                                 })
