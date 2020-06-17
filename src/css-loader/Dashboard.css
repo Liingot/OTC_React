@@ -79,6 +79,7 @@
 .Col-right{
     height: 400px;
     background: white;
+    position: relative;
 }
 .Col-content-text{
     display: flex;
@@ -133,4 +134,52 @@
 .num-title{
     font-size: 14px;
     color: #53596e;
+}
+.Col-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+.Col-title{
+    font-size: 16px;
+    color: #53596E;
+    height: 90px;
+}
+.Col-title > span{
+    display: flex;
+    align-items: center;
+}
+.big{
+    padding-left: 25px;
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #2c82be;
+}
+.ols{
+    display: flex;
+    justify-content: space-between;
+}
+.ols > div{
+    width: 49%;
+    padding: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+.olc-title{
+    font-size: 15px;
+    color: #005F85;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.olc-subTitle{
+    color: rgb(176, 217, 234);
+    font-size: 25px;
+}
+.olc-subTitle > span:nth-child(1){
+    font-size: 30px;
+    font-size: 500;
+    color: white;
+    margin-right: 5px;
 }

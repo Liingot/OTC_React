@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from 'antd';
+import NoData from "../../components/noData/NoData";
 import "../../css-loader/Dashboard.css"
 function Dashboard() {
     return (
@@ -22,8 +23,8 @@ function Dashboard() {
             </header>
             <Row>
                 <Col span={16}>
-                    <div className='Col'>
-                        <div className='Col-content'>
+                    <div className='Col' >
+                        <div className='Col-content' style={{ position: 'relative' }}>
                             <p className='Col-content-text'>
                                 <span>OTC双边交易</span>
                                 <span>发布意向</span>
@@ -36,22 +37,44 @@ function Dashboard() {
                                     </div>
                                 </li>
                                 <li className='Col-lis Col-lis-bordr'>
-                                <div>
+                                    <div>
                                         <span className='num-title'>我的意向</span>
                                         <span className='Col-lis-num'>1</span>
                                     </div>
                                 </li>
                                 <li className='Col-lis'>
-                                <div>
+                                    <div>
                                         <span className='num-title'>收藏意向</span>
                                         <span className='Col-lis-num'>1</span>
                                     </div></li>
                             </ul>
+                            <div className='Col-title'>
+                                <span>洽谈中电量 <b className='big'>2000MWh</b></span>
+                                <span>已达成意向电量<b className='big' style={{ color: '#61D6C9' }}>2000MWh</b> </span>
+                            </div>
+                            <div className='ols'>
+                                <div style={{ background: '#61B4D6' }}>
+                                    <p className='olc-title'>待确认/洽谈中</p>
+                                    <p className='olc-subTitle'>
+                                        <span>3</span>
+                                        <i style={{ margin: '5px 0' }}>/</i> 5
+                                    </p>
+                                </div>
+                                <div style={{ background: '#61D6C9' }}>
+                                    <p className='olc-title'>变更申请/已达成</p>
+                                    <p className='olc-subTitle'>
+                                        <span>3</span>
+                                        <i style={{ margin: '5px 0' }}>/</i> 5
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Col>
                 <Col span={8} >
-                    <div className="Col-right"></div>
+                    <div className="Col-right">
+                        <NoData />
+                    </div>
                 </Col>
             </Row>
         </section>

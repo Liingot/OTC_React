@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory ,Redirect} from "react-router-dom";
 import { Input, Select, Button, message } from 'antd';
 import { UserOutlined, UnlockOutlined } from '@ant-design/icons';
 import { areaQueryByPage, login, getUsetInfo } from "../../api/login";
@@ -11,7 +11,12 @@ function Login() {
     const [params, setParams] = useState({ loginName: "", netProvinceId: "", certificate: "" });
     useEffect(() => {
         init();
-    }, [])
+    }, []);
+    let token = localStorage.getItem('token'); //后期改成redux获取
+
+    if (token) {
+        return <Redirect to="/Dashboard" />;
+    }
     return (<div className='login'>
         <section className="login-content">
             <h3 className='login-title'>双边交易企业空间</h3>
@@ -32,7 +37,7 @@ function Login() {
         </section>
     </div>)
     function rect() {
-        history.push('/Dashboard');
+        history.push('/');
     }
     function handleChange(value) {
         let { loginName, certificate } = params;
