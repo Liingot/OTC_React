@@ -1,13 +1,13 @@
 import axios from "axios";
-import { message } from 'antd';
+import { message, Modal } from 'antd';
+
+
 //创建一个axios示例
 axios.defaults.headers.post['Content-Type'] = 'application/json';
-
 const service = axios.create({
   baseURL: process.env.REACT_APP_BASE_API,
   timeout: 5000,
 });
-
 // 请求拦截器
 service.interceptors.request.use(
   (config) => {
@@ -37,6 +37,24 @@ service.interceptors.response.use(response => {
   }
 },
   (error) => {
+    const { status } = error.response;
+    if (status === 401) { //token失效
+      console.log(status, 'status');
+      Modal.confirm({
+        title: "确定登出?",
+        content:
+          "由于长时间未操作，您已被登出，可以取消继续留在该页面，或者重新登录",
+        okText: "重新登录",
+        cancelText: "取消",
+        onOk() {
+          console.log('ok');
+          localStorage.clear();
+        },
+        onCancel() {
+          console.log("Cancel");
+        },
+      });
+    }
     return Promise.reject(error);
   }
 );

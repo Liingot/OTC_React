@@ -61,7 +61,8 @@ function Login() {
                 localStorage.setItem('token', res.data.data);
                 getUsetInfo().then(res => {
                     if (res.data.code === 0) {
-                        localStorage.setItem('userInfo', JSON.stringify(res.data.data));
+                        let netProvince = list.find(item => {return item.id === netProvinceId}).name;
+                        localStorage.setItem('userInfo', JSON.stringify({...res.data.data,netProvince}));
                         rect();
                     }
                 })
